@@ -23,29 +23,31 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="http://127.0.0.1:5500/page1.html">Cities Info</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Cities
+                            Common Cities
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Bangalore</a></li>
                             <li><a class="dropdown-item" href="#">Chennai</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
                             <li><a class="dropdown-item" href="#">Delhi</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link disabled">How to Use?</a>
-                    </li>
+                    </li> -->
                 </ul>
-                <form class="d-flex" role="search">
+                <!-- <form class="d-flex" role="search">
                     <input id="city" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
+                </form> -->
+                <form class="d-flex" role="search">
+                    <input id="city" class="form-control me-2" list="citySuggestions" type="search" placeholder="Search" aria-label="Search">
+                    <datalist id="citySuggestions"></datalist>
                     <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
                 </form>
             </div>
